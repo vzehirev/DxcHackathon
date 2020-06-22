@@ -1,0 +1,25 @@
+{% extends "/shared/layout.twig" %}
+
+{% block content %}
+
+    <br>
+    <div class="container marketing">
+    {% if products %}
+    <h4 class="text-muted" style="text-align: center">{{ products|first.category }}s</h4>
+    {% else %}
+    <h4 class="text-muted" style="text-align: center">No products found</h4>
+    {% endif %}
+    <br>
+    <div class="row">
+    {% for product in products %}
+        <div class="col-lg-4">
+            <img src="{{ product.photo }}" height="200px" width="auto">
+            <h4 style="margin-top:33px; margin-bottom: 33px;">{{ product.title }}</h4>
+            <h5 class="text-muted" style="margin-top:33px; margin-bottom: 33px; color: #f0ad4e !important;">€{{ product.price }}</h5>
+            <p>{{ product.description }}</p>
+            <p><a class="btn btn-success" href="\cart\add\{{ product.id }}" role="button">Add to cart</a></p>
+        </div><!-- /.col-lg-4 -->
+    {% endfor %}
+    </div><!-- /.row -->
+
+{% endblock %}

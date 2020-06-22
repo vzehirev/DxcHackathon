@@ -1,0 +1,264 @@
+2019/08/07 10:10:43 [error] 6#6: *14 FastCGI sent in stderr: "PHP message: Slim Application Error:
+Type: RuntimeException
+Message: Callable App\src\controllers\homeController does not exist
+File: /app/vendor/slim/slim/Slim/CallableResolver.php
+Line: 90
+Trace: #0 /app/vendor/slim/slim/Slim/CallableResolver.php(67): Slim\CallableResolver->resolveCallable('App\\src\\control...')
+#1 /app/vendor/slim/slim/Slim/CallableResolverAwareTrait.php(45): Slim\CallableResolver->resolve('App\\src\\control...')
+#2 /app/vendor/slim/slim/Slim/Route.php(351): Slim\Routable->resolveCallable('App\\src\\control...')
+#3 /app/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /app/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /app/vendor/slim/slim/Slim/App.php(515): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /app/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http" while reading response header from upstream, client: 172.18.0.5, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.9:9000", host: "webapp.localhost"
+2019/08/07 10:12:02 [error] 6#6: *16 FastCGI sent in stderr: "PHP message: Slim Application Error:
+Type: RuntimeException
+Message: Callable App\src\controllers\homeController does not exist
+File: /app/vendor/slim/slim/Slim/CallableResolver.php
+Line: 90
+Trace: #0 /app/vendor/slim/slim/Slim/CallableResolver.php(67): Slim\CallableResolver->resolveCallable('App\\src\\control...')
+#1 /app/vendor/slim/slim/Slim/CallableResolverAwareTrait.php(45): Slim\CallableResolver->resolve('App\\src\\control...')
+#2 /app/vendor/slim/slim/Slim/Route.php(351): Slim\Routable->resolveCallable('App\\src\\control...')
+#3 /app/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /app/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /app/vendor/slim/slim/Slim/App.php(515): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /app/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http" while reading response header from upstream, client: 172.18.0.5, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.9:9000", host: "webapp.localhost"
+2019/08/07 10:19:41 [error] 6#6: *18 FastCGI sent in stderr: "PHP message: Slim Application Error:
+Type: Error
+Message: Class 'HomeController' not found
+File: /app/src/public/index.php
+Line: 15
+Trace: #0 /app/vendor/pimple/pimple/src/Pimple/Container.php(118): {closure}(Object(Slim\Container))
+#1 /app/vendor/slim/slim/Slim/Container.php(123): Pimple\Container->offsetGet('HomeController')
+#2 /app/vendor/slim/slim/Slim/CallableResolver.php(86): Slim\Container->get('HomeController')
+#3 /app/vendor/slim/slim/Slim/CallableResolver.php(61): Slim\CallableResolver->resolveCallable('HomeController', 'home')
+#4 /app/vendor/slim/slim/Slim/CallableResolverAwareTrait.php(45): Slim\CallableResolver->resolve('HomeController:...')
+#5 /app/vendor/slim/slim/Slim/Route.php(351): Slim\Routable->resolveCallable('HomeController:...')
+#6 /app/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /app/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http" while reading response header from upstream, client: 172.18.0.5, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.9:9000", host: "webapp.localhost"
+2019/08/07 10:19:44 [error] 6#6: *18 FastCGI sent in stderr: "PHP message: Slim Application Error:
+Type: Error
+Message: Class 'HomeController' not found
+File: /app/src/public/index.php
+Line: 15
+Trace: #0 /app/vendor/pimple/pimple/src/Pimple/Container.php(118): {closure}(Object(Slim\Container))
+#1 /app/vendor/slim/slim/Slim/Container.php(123): Pimple\Container->offsetGet('HomeController')
+#2 /app/vendor/slim/slim/Slim/CallableResolver.php(86): Slim\Container->get('HomeController')
+#3 /app/vendor/slim/slim/Slim/CallableResolver.php(61): Slim\CallableResolver->resolveCallable('HomeController', 'home')
+#4 /app/vendor/slim/slim/Slim/CallableResolverAwareTrait.php(45): Slim\CallableResolver->resolve('HomeController:...')
+#5 /app/vendor/slim/slim/Slim/Route.php(351): Slim\Routable->resolveCallable('HomeController:...')
+#6 /app/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /app/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http" while reading response header from upstream, client: 172.18.0.5, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.9:9000", host: "webapp.localhost"
+2019/08/07 10:19:47 [error] 6#6: *18 FastCGI sent in stderr: "PHP message: Slim Application Error:
+Type: Error
+Message: Class 'HomeController' not found
+File: /app/src/public/index.php
+Line: 15
+Trace: #0 /app/vendor/pimple/pimple/src/Pimple/Container.php(118): {closure}(Object(Slim\Container))
+#1 /app/vendor/slim/slim/Slim/Container.php(123): Pimple\Container->offsetGet('HomeController')
+#2 /app/vendor/slim/slim/Slim/CallableResolver.php(86): Slim\Container->get('HomeController')
+#3 /app/vendor/slim/slim/Slim/CallableResolver.php(61): Slim\CallableResolver->resolveCallable('HomeController', 'home')
+#4 /app/vendor/slim/slim/Slim/CallableResolverAwareTrait.php(45): Slim\CallableResolver->resolve('HomeController:...')
+#5 /app/vendor/slim/slim/Slim/Route.php(351): Slim\Routable->resolveCallable('HomeController:...')
+#6 /app/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /app/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http" while reading response header from upstream, client: 172.18.0.5, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.9:9000", host: "webapp.localhost"
+2019/08/07 10:23:24 [error] 6#6: *22 FastCGI sent in stderr: "PHP message: Slim Application Error:
+Type: Error
+Message: Class 'HomeController' not found
+File: /app/src/public/index.php
+Line: 15
+Trace: #0 /app/vendor/pimple/pimple/src/Pimple/Container.php(118): {closure}(Object(Slim\Container))
+#1 /app/vendor/slim/slim/Slim/Container.php(123): Pimple\Container->offsetGet('HomeController')
+#2 /app/vendor/slim/slim/Slim/CallableResolver.php(86): Slim\Container->get('HomeController')
+#3 /app/vendor/slim/slim/Slim/CallableResolver.php(61): Slim\CallableResolver->resolveCallable('HomeController', 'home')
+#4 /app/vendor/slim/slim/Slim/CallableResolverAwareTrait.php(45): Slim\CallableResolver->resolve('HomeController:...')
+#5 /app/vendor/slim/slim/Slim/Route.php(351): Slim\Routable->resolveCallable('HomeController:...')
+#6 /app/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /app/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http" while reading response header from upstream, client: 172.18.0.5, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.9:9000", host: "webapp.localhost"
+2019/08/07 10:31:34 [error] 6#6: *24 FastCGI sent in stderr: "PHP message: Slim Application Error:
+Type: TypeError
+Message: Argument 1 passed to HomeController::home() must be an instance of Request, instance of Slim\Http\Request given
+File: /app/src/controllers/homeController.php
+Line: 9
+Trace: #0 [internal function]: HomeController->home(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /app/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /app/vendor/slim/slim/Slim/Route.php(356): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /app/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /app/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /app/vendor/slim/slim/Slim/App.php(515): Slim\Route->run(Object(Slim\Http\Reques" while reading response header from upstream, client: 172.18.0.5, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.9:9000", host: "webapp.localhost"
+2019/08/07 10:31:37 [error] 6#6: *24 FastCGI sent in stderr: "PHP message: Slim Application Error:
+Type: TypeError
+Message: Argument 1 passed to HomeController::home() must be an instance of Request, instance of Slim\Http\Request given
+File: /app/src/controllers/homeController.php
+Line: 9
+Trace: #0 [internal function]: HomeController->home(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /app/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /app/vendor/slim/slim/Slim/Route.php(356): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /app/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /app/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /app/vendor/slim/slim/Slim/App.php(515): Slim\Route->run(Object(Slim\Http\Reques" while reading response header from upstream, client: 172.18.0.5, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.9:9000", host: "webapp.localhost"
+2019/08/07 10:36:30 [error] 6#6: *27 FastCGI sent in stderr: "PHP message: Slim Application Error:
+Type: TypeError
+Message: Argument 1 passed to controllers\HomeController::home() must be an instance of controllers\Request, instance of Slim\Http\Request given
+File: /app/src/controllers/homeController.php
+Line: 11
+Trace: #0 [internal function]: controllers\HomeController->home(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /app/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /app/vendor/slim/slim/Slim/Route.php(356): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /app/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /app/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /app/vendor/slim/slim/Slim/App.php(515): Sl" while reading response header from upstream, client: 172.18.0.5, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.9:9000", host: "webapp.localhost"
+2019/08/07 10:36:32 [error] 6#6: *27 FastCGI sent in stderr: "PHP message: Slim Application Error:
+Type: TypeError
+Message: Argument 1 passed to controllers\HomeController::home() must be an instance of controllers\Request, instance of Slim\Http\Request given
+File: /app/src/controllers/homeController.php
+Line: 11
+Trace: #0 [internal function]: controllers\HomeController->home(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /app/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /app/vendor/slim/slim/Slim/Route.php(356): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /app/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /app/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /app/vendor/slim/slim/Slim/App.php(515): Sl" while reading response header from upstream, client: 172.18.0.5, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.9:9000", host: "webapp.localhost"
+2019/08/07 10:37:12 [error] 6#6: *27 FastCGI sent in stderr: "PHP message: Slim Application Error:
+Type: TypeError
+Message: Argument 1 passed to controllers\HomeController::home() must be an instance of controllers\Request, instance of Slim\Http\Request given
+File: /app/src/controllers/homeController.php
+Line: 11
+Trace: #0 [internal function]: controllers\HomeController->home(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /app/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /app/vendor/slim/slim/Slim/Route.php(356): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /app/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /app/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /app/vendor/slim/slim/Slim/App.php(515): Sl" while reading response header from upstream, client: 172.18.0.5, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.9:9000", host: "webapp.localhost"
+2019/08/07 10:37:15 [error] 6#6: *27 FastCGI sent in stderr: "PHP message: Slim Application Error:
+Type: TypeError
+Message: Argument 1 passed to controllers\HomeController::home() must be an instance of controllers\Request, instance of Slim\Http\Request given
+File: /app/src/controllers/homeController.php
+Line: 11
+Trace: #0 [internal function]: controllers\HomeController->home(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /app/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /app/vendor/slim/slim/Slim/Route.php(356): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /app/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /app/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /app/vendor/slim/slim/Slim/App.php(515): Sl" while reading response header from upstream, client: 172.18.0.5, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.9:9000", host: "webapp.localhost"
+2019/08/07 10:39:29 [error] 6#6: *32 FastCGI sent in stderr: "PHP message: Slim Application Error:
+Type: TypeError
+Message: Argument 1 passed to Controllers\HomeController::home() must be an instance of Controllers\Request, instance of Slim\Http\Request given
+File: /app/src/controllers/homeController.php
+Line: 11
+Trace: #0 [internal function]: Controllers\HomeController->home(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /app/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /app/vendor/slim/slim/Slim/Route.php(356): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /app/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /app/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /app/vendor/slim/slim/Slim/App.php(515): Sl" while reading response header from upstream, client: 172.18.0.5, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.9:9000", host: "webapp.localhost"
+2019/08/07 10:51:47 [error] 6#6: *34 FastCGI sent in stderr: "PHP message: Slim Application Error:
+Type: TypeError
+Message: Argument 1 passed to Controllers\HomeController::home() must be an instance of Controllers\Request, instance of Slim\Http\Request given
+File: /app/src/controllers/homeController.php
+Line: 11
+Trace: #0 [internal function]: Controllers\HomeController->home(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /app/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /app/vendor/slim/slim/Slim/Route.php(356): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /app/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /app/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /app/vendor/slim/slim/Slim/App.php(515): Sl" while reading response header from upstream, client: 172.18.0.5, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.9:9000", host: "webapp.localhost"
+2019/08/07 10:57:16 [error] 6#6: *36 FastCGI sent in stderr: "PHP message: Slim Application Error:
+Type: TypeError
+Message: Argument 1 passed to Controllers\HomeController::home() must be an instance of Controllers\Request, instance of Slim\Http\Request given
+File: /app/src/controllers/homeController.php
+Line: 13
+Trace: #0 [internal function]: Controllers\HomeController->home(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /app/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /app/vendor/slim/slim/Slim/Route.php(356): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /app/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /app/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /app/vendor/slim/slim/Slim/App.php(515): Sl" while reading response header from upstream, client: 172.18.0.5, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.9:9000", host: "webapp.localhost"
+2019/08/07 10:58:16 [error] 6#6: *36 FastCGI sent in stderr: "PHP message: Slim Application Error:
+Type: Error
+Message: Class 'Controllers\HomeController' not found
+File: /app/src/public/index.php
+Line: 14
+Trace: #0 /app/vendor/pimple/pimple/src/Pimple/Container.php(118): {closure}(Object(Slim\Container))
+#1 /app/vendor/slim/slim/Slim/Container.php(123): Pimple\Container->offsetGet('HomeController')
+#2 /app/vendor/slim/slim/Slim/CallableResolver.php(86): Slim\Container->get('HomeController')
+#3 /app/vendor/slim/slim/Slim/CallableResolver.php(61): Slim\CallableResolver->resolveCallable('HomeController', 'home')
+#4 /app/vendor/slim/slim/Slim/CallableResolverAwareTrait.php(45): Slim\CallableResolver->resolve('HomeController:...')
+#5 /app/vendor/slim/slim/Slim/Route.php(351): Slim\Routable->resolveCallable('HomeController:...')
+#6 /app/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /app/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Obje" while reading response header from upstream, client: 172.18.0.5, server: localhost, request: "GET /home HTTP/1.1", upstream: "fastcgi://172.18.0.9:9000", host: "webapp.localhost"
+2019/08/07 10:58:37 [error] 6#6: *36 FastCGI sent in stderr: "PHP message: Slim Application Error:
+Type: Error
+Message: Class 'Controllers\HomeController' not found
+File: /app/src/public/index.php
+Line: 14
+Trace: #0 /app/vendor/pimple/pimple/src/Pimple/Container.php(118): {closure}(Object(Slim\Container))
+#1 /app/vendor/slim/slim/Slim/Container.php(123): Pimple\Container->offsetGet('HomeController')
+#2 /app/vendor/slim/slim/Slim/CallableResolver.php(86): Slim\Container->get('HomeController')
+#3 /app/vendor/slim/slim/Slim/CallableResolver.php(61): Slim\CallableResolver->resolveCallable('HomeController', 'home')
+#4 /app/vendor/slim/slim/Slim/CallableResolverAwareTrait.php(45): Slim\CallableResolver->resolve('HomeController:...')
+#5 /app/vendor/slim/slim/Slim/Route.php(351): Slim\Routable->resolveCallable('HomeController:...')
+#6 /app/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /app/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Obje" while reading response header from upstream, client: 172.18.0.5, server: localhost, request: "GET /home HTTP/1.1", upstream: "fastcgi://172.18.0.9:9000", host: "webapp.localhost"
+2019/08/07 10:59:21 [error] 6#6: *36 FastCGI sent in stderr: "PHP message: Slim Application Error:
+Type: Error
+Message: Class 'App\controllers\HomeController' not found
+File: /app/src/public/index.php
+Line: 13
+Trace: #0 /app/vendor/pimple/pimple/src/Pimple/Container.php(118): {closure}(Object(Slim\Container))
+#1 /app/vendor/slim/slim/Slim/Container.php(123): Pimple\Container->offsetGet('HomeController')
+#2 /app/vendor/slim/slim/Slim/CallableResolver.php(86): Slim\Container->get('HomeController')
+#3 /app/vendor/slim/slim/Slim/CallableResolver.php(61): Slim\CallableResolver->resolveCallable('HomeController', 'home')
+#4 /app/vendor/slim/slim/Slim/CallableResolverAwareTrait.php(45): Slim\CallableResolver->resolve('HomeController:...')
+#5 /app/vendor/slim/slim/Slim/Route.php(351): Slim\Routable->resolveCallable('HomeController:...')
+#6 /app/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /app/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request)," while reading response header from upstream, client: 172.18.0.5, server: localhost, request: "GET /home HTTP/1.1", upstream: "fastcgi://172.18.0.9:9000", host: "webapp.localhost"
+2019/08/07 10:59:23 [error] 6#6: *36 FastCGI sent in stderr: "PHP message: Slim Application Error:
+Type: Error
+Message: Class 'App\controllers\HomeController' not found
+File: /app/src/public/index.php
+Line: 13
+Trace: #0 /app/vendor/pimple/pimple/src/Pimple/Container.php(118): {closure}(Object(Slim\Container))
+#1 /app/vendor/slim/slim/Slim/Container.php(123): Pimple\Container->offsetGet('HomeController')
+#2 /app/vendor/slim/slim/Slim/CallableResolver.php(86): Slim\Container->get('HomeController')
+#3 /app/vendor/slim/slim/Slim/CallableResolver.php(61): Slim\CallableResolver->resolveCallable('HomeController', 'home')
+#4 /app/vendor/slim/slim/Slim/CallableResolverAwareTrait.php(45): Slim\CallableResolver->resolve('HomeController:...')
+#5 /app/vendor/slim/slim/Slim/Route.php(351): Slim\Routable->resolveCallable('HomeController:...')
+#6 /app/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /app/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request)," while reading response header from upstream, client: 172.18.0.5, server: localhost, request: "GET /home HTTP/1.1", upstream: "fastcgi://172.18.0.9:9000", host: "webapp.localhost"
+2019/08/07 10:59:54 [error] 6#6: *36 FastCGI sent in stderr: "PHP message: Slim Application Error:
+Type: RuntimeException
+Message: Callable App\controllers\HomeController does not exist
+File: /app/vendor/slim/slim/Slim/CallableResolver.php
+Line: 90
+Trace: #0 /app/vendor/slim/slim/Slim/CallableResolver.php(61): Slim\CallableResolver->resolveCallable('App\\controllers...', 'home')
+#1 /app/vendor/slim/slim/Slim/CallableResolverAwareTrait.php(45): Slim\CallableResolver->resolve('App\\controllers...')
+#2 /app/vendor/slim/slim/Slim/Route.php(351): Slim\Routable->resolveCallable('App\\controllers...')
+#3 /app/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /app/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /app/vendor/slim/slim/Slim/App.php(515): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /app/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Htt" while reading response header from upstream, client: 172.18.0.5, server: localhost, request: "GET /home HTTP/1.1", upstream: "fastcgi://172.18.0.9:9000", host: "webapp.localhost"
+2019/08/07 11:05:48 [error] 6#6: *44 FastCGI sent in stderr: "PHP message: Slim Application Error:
+Type: TypeError
+Message: Argument 1 passed to App\controllers\HomeController::home() must be an instance of App\controllers\Request, instance of Slim\Http\Request given
+File: /app/src/controllers/homeController.php
+Line: 13
+Trace: #0 [internal function]: App\controllers\HomeController->home(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /app/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /app/vendor/slim/slim/Slim/Route.php(356): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /app/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /app/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /app/vendor/slim/slim/Slim/App" while reading response header from upstream, client: 172.18.0.5, server: localhost, request: "GET /home HTTP/1.1", upstream: "fastcgi://172.18.0.9:9000", host: "webapp.localhost"
+2019/08/07 11:07:11 [error] 6#6: *46 FastCGI sent in stderr: "PHP message: Slim Application Error:
+Type: TypeError
+Message: Argument 1 passed to App\controllers\HomeController::home() must be an instance of App\controllers\Request, instance of Slim\Http\Request given
+File: /app/src/controllers/homeController.php
+Line: 13
+Trace: #0 [internal function]: App\controllers\HomeController->home(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /app/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /app/vendor/slim/slim/Slim/Route.php(356): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /app/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /app/vendor/slim/slim/Slim/Route.php(334): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /app/vendor/slim/slim/Slim/App" while reading response header from upstream, client: 172.18.0.5, server: localhost, request: "GET /home HTTP/1.1", upstream: "fastcgi://172.18.0.9:9000", host: "webapp.localhost"
+2019/08/07 11:09:07 [error] 6#6: *46 upstream timed out (110: Operation timed out) while reading response header from upstream, client: 172.18.0.5, server: localhost, request: "GET /home HTTP/1.1", upstream: "fastcgi://172.18.0.9:9000", host: "webapp.localhost"
+2019/08/08 07:08:42 [error] 7#7: *40 upstream timed out (110: Operation timed out) while reading response header from upstream, client: 172.18.0.3, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.10:9000", host: "webapp.localhost"
+2019/08/08 06:31:24 [error] 7#7: *200 upstream timed out (110: Operation timed out) while reading response header from upstream, client: 172.18.0.9, server: localhost, request: "GET /cart HTTP/1.1", upstream: "fastcgi://172.18.0.10:9000", host: "webapp.localhost"

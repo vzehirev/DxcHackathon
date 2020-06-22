@@ -1,0 +1,52 @@
+{% extends "/shared/layout.twig" %}
+
+{% block content %}
+
+<br>
+
+    <div class="container marketing">
+
+        <h4 class="text-muted" style="text-align: center">YOUR CART</h4>
+            <br>
+        <table class="table table-active">
+            <thead>
+            <tr class="table table-primary">
+                <th scope="col">Product:</th>
+                <th scope="col">Quantity:</th>
+                <th scope="col">Price:</th>
+                <th scope="col">Amount:</th>
+                <th scope="col"></th>
+            </tr>
+            </thead>
+            <tbody>
+
+            <!-- FOREACH ITEM IN CART START -->
+
+            {% for product in cart %}
+
+                <tr class="table table-active">
+                    <th scope="row">{{product.title}}</th>
+                    <td>1</td>
+                    <td>{{product.price}}</td>
+                    <td>{{product.price}}</td>
+                    <td><a class="btn btn-danger" href="/cart/delete/{{ product.id }}">X</a></td>
+                </tr>
+
+            {% endfor %}
+
+            <!-- FOREACH END -->
+
+            <tr class="table-dark">
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+                <td>Total price: {{ ttl }}</td>                <td></td>
+
+            </tr>
+            </tbody>
+        </table>
+        <button type="button" class="btn btn-success">ORDER NOW</button>
+        <a href="/cart/deleteAll" class="btn btn-danger">CLEAR CART</a>
+    </div>
+
+{% endblock %}
